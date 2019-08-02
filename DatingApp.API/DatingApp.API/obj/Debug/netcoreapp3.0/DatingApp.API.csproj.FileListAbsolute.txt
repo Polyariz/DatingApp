@@ -7,6 +7,7 @@ E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\DatingApp.API.runtimeconfig.dev.json
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\DatingApp.API.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\DatingApp.API.pdb
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
@@ -15,11 +16,18 @@ E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Remotion.Linq.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_e_sqlite3.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\System.Interactive.Async.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so

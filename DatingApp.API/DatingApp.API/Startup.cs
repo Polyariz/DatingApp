@@ -27,15 +27,7 @@ namespace DatingApp.API
              services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddCors();
-            services.AddScoped<IAuthRepository, AuthRepository>();
-              //Enable the use of an[Authorize("Bearer")] attribute on methods and classes to protect.
-            // services.AddAuthorization(auth =>
-            // {
-            //     auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
-            //     .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme‌)
-            //     .RequireAuthenticatedUser().Build());
-            // });
-
+            services.AddScoped<IAuthRepository, AuthRepository>(); 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options => {
                     options.TokenValidationParameters = new TokenValidationParameters

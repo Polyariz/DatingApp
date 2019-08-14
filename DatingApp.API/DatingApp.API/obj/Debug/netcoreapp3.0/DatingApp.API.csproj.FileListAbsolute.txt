@@ -51,3 +51,6 @@ E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.csproj.CopyComplete
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.pdb
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Data\UserSeedData.json
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\AutoMapper.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

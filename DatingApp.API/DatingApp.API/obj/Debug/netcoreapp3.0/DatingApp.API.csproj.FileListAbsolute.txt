@@ -43,7 +43,6 @@ E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.csprojAssemblyReference.cache
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\staticwebassets\DatingApp.API.StaticWebAssets.Manifest.cache
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\staticwebassets\DatingApp.API.StaticWebAssets.xml
-E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.csproj.CoreCompileInputs.cache
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.MvcApplicationPartsAssemblyInfo.cs
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.AssemblyInfoInputs.cache
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.AssemblyInfo.cs
@@ -54,3 +53,6 @@ E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Data\UserSeedData.json
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\AutoMapper.dll
 E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\CloudinaryDotNet.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+E:\DEVELOP\ASP.NET\DatingApp\DatingApp.API\DatingApp.API\obj\Debug\netcoreapp3.0\DatingApp.API.MvcApplicationPartsAssemblyInfo.cache

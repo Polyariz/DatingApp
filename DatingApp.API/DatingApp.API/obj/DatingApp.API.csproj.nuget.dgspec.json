@@ -55,9 +55,13 @@
               "target": "Package",
               "version": "[1.8.0, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.0-preview1-19506-01, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.0.0-preview-19075-0444, )"
             },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
@@ -65,17 +69,21 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.0.0-preview6.19304.10, )"
+              "version": "[3.1.0-preview1.19506.2, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[3.0.0-preview6.19304.10, )"
+              "version": "[3.1.0-preview1.19506.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview6.19304.10, )"
+              "version": "[3.1.0-preview1.19506.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.2.7, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

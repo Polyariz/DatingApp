@@ -77,7 +77,7 @@ namespace DatingApp.API.Migrations
 
                     b.Property<bool>("IsMain");
 
-                    b.Property<string>("PublicID");
+                    b.Property<string>("PublicId");
 
                     b.Property<string>("Url");
 

@@ -14,7 +14,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting; 
 using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
+using Newtonsoft.Json;  
+using Microsoft.AspNetCore.Authorization; 
+using Microsoft.AspNetCore.Identity; 
+using Microsoft.AspNetCore.Mvc.Authorization; 
 
 namespace DatingApp.API
 {
@@ -26,12 +29,32 @@ namespace DatingApp.API
         }
 
         public IConfiguration Configuration { get; }
+         public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            services.AddDbContext<DataContext>(x => {
+                x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
+            });
 
+        }
+
+        public void ConfigureProductionServices(IServiceCollection services)
+        {
+            //UseMySql or UseSqlSever
+             services.AddDbContext<DataContext>(x => {
+                x.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
+            });
+
+             ConfigureServices(services); 
+        }
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+        { 
+            //services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+           //   UseMySql(Configuration.GetConnectionString("DefaultConnection")));//!!!!!!!!!!
+            
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddRazorPages();//https://docs.microsoft.com/en-us/aspnet/core/migration/22-to-30?view=aspnetcore-2.2&tabs=visual-studio#update-routing-startup-code
+
             /*
             ReferenceLoopHandling.Error: By default Json.NET will error if a reference loop is encountered (otherwise the serializer will get into an infinite loop).
             ReferenceLoopHandling.Ignore: Json.NET will ignore objects in reference loops and not serialize them. The first time an object is encountered it will be serialized as usual but if the object is encountered as a child object of itself the serializer will skip serializing it.
@@ -51,7 +74,7 @@ namespace DatingApp.API
 
             services.AddCors(); 
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(DatingRepository).Assembly);
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>(); 
             services.AddScoped<IDatingRepository, DatingRepository>();
@@ -71,11 +94,11 @@ namespace DatingApp.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Seed seeder)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage(); 
             }
             else
             {
@@ -93,24 +116,47 @@ namespace DatingApp.API
                 });
 
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                //app.UseHsts();
+                // app.UseHsts(); 
             }
 
             //app.UseHttpsRedirection();
-            //seeder.SeedUsers(); 
-            // app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-             app.UseCors(x => x.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
-            app.UseRouting(); 
-
+            
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            // app.UseCors(x => x.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+           
             app.UseAuthorization();
             app.UseAuthentication();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            
+             app.UseRouting(); 
 
-            //app.UseMvc();
+            //old variant
+            // app.UseEndpoints(endpoints =>
+            // {
+            //     endpoints.MapControllers(); 
+            //     endpoints.MapRazorPages(); 
+            //     endpoints.MapControllerRoute("spa-fallback", "{controller=Fallback}/{action=Index}");
+            // });
+
+            app.UseEndpoints(endpoints =>
+            {  
+                endpoints.MapFallbackToController(action:"Index", controller:"Fallback");
+                // endpoints.MapControllerRoute("default", "{controller=Fallback}/{action=Index}/{id?}");
+                endpoints.MapRazorPages(); 
+            });
+          
+          /* 
+            //https://metanit.com/sharp/aspnetcore/2.2.php
+             // обработка маршрутов, которые не сопоставлены с ресурсам ранее
+             //Таким образом, для всех запросов, которые не сопоставлены с ресурсами в приложении, будет отправляться файл wwwroot/index.html.
+            app.Run(async (context) =>
+            {
+                context.Response.ContentType = "text/html"; 
+                await context.Response.SendFileAsync(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "index.html"));
+            });
+            */
         }
     }
 }

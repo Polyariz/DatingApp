@@ -71,6 +71,10 @@
               "target": "Package",
               "version": "[3.1.0-preview1.19506.2, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0-preview1.19506.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[3.1.0-preview1.19506.2, )"
@@ -84,6 +88,14 @@
             "Microsoft.NETCore.App": {
               "target": "Package",
               "version": "[2.2.7, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.0.0-rc1.final, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

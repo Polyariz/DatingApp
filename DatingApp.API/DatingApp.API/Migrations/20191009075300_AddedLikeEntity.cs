@@ -7,7 +7,7 @@ namespace DatingApp.API.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.RenameColumn(
-                name: "PublicID",
+                name: "PublicId",
                 table: "Photos",
                 newName: "PublicId");
 
@@ -49,7 +49,7 @@ namespace DatingApp.API.Migrations
             migrationBuilder.RenameColumn(
                 name: "PublicId",
                 table: "Photos",
-                newName: "PublicID");
+                newName: "PublicId");
         }
     }
 }

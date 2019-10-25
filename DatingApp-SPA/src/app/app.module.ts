@@ -41,13 +41,12 @@ export function tokenGetter() {
   return localStorage.getItem("token");
 }
 
-export class CustomHammerConfig extends HammerGestureConfig 
-{
+export class CustomHammerConfig extends HammerGestureConfig  {
   overrides = {
-    pinch: {enable: false},
-    rotate: {enable: false}
+      pinch: { enable: false },
+      rotate: { enable: false }
   };
-}
+} 
 
 @NgModule({
    declarations: [

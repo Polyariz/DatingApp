@@ -31,6 +31,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0-preview-19075-0444",
           "Microsoft.AspNetCore.Mvc.Versioning": "4.0.0-preview8.19405.7",
           "Microsoft.EntityFrameworkCore": "3.1.0-preview1.19506.2",
+          "Microsoft.EntityFrameworkCore.Proxies": "3.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0-preview1.19506.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.0-preview1.19506.2",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0-preview1.19506.2",
@@ -554,6 +555,21 @@
             "assemblyVersion": "3.1.0.0",
             "fileVersion": "3.100.19.50602"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Proxies/3.0.0": {
+        "dependencies": {
+          "Castle.Core": "4.4.0",
+          "Microsoft.EntityFrameworkCore": "3.1.0-preview1.19506.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Proxies.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.46310"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Proxies.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/3.1.0-preview1.19506.2": {
@@ -4013,6 +4029,13 @@
       "sha512": "sha512-rriRHUrRoGzVsYhmBVqCpxZjvn6BsayxDPGeOdM5JsOR9mS99JmCIPp4oUKHx/hfcTnpTh8BFbn15RQs+gxUZw==",
       "path": "microsoft.entityframeworkcore.design/3.1.0-preview1.19506.2",
       "hashPath": "microsoft.entityframeworkcore.design.3.1.0-preview1.19506.2.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Proxies/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bglydrz27e/vxqsIXPLgNf13EtWeUtcNuOLW/hZ+tKSI46/n6tAo5f70ylQ3II1M/HZoCY2ssicIHxVbOYXklA==",
+      "path": "microsoft.entityframeworkcore.proxies/3.0.0",
+      "hashPath": "microsoft.entityframeworkcore.proxies.3.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/3.1.0-preview1.19506.2": {
       "type": "package",

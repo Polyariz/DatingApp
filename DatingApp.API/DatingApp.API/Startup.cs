@@ -32,15 +32,18 @@ namespace DatingApp.API
          public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(x => {
+                x.UseLazyLoadingProxies();
                 x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
-
+            
+            ConfigureServices(services); 
         }
 
         public void ConfigureProductionServices(IServiceCollection services)
         {
             //UseMySql or UseSqlSever
              services.AddDbContext<DataContext>(x => {
+                 x.UseLazyLoadingProxies();
                 x.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
             });
 
@@ -53,6 +56,7 @@ namespace DatingApp.API
            //   UseMySql(Configuration.GetConnectionString("DefaultConnection")));//!!!!!!!!!!
             
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+             
             services.AddRazorPages();//https://docs.microsoft.com/en-us/aspnet/core/migration/22-to-30?view=aspnetcore-2.2&tabs=visual-studio#update-routing-startup-code
 
             /*

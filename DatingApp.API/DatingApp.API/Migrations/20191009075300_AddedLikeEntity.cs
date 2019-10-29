@@ -6,10 +6,10 @@ namespace DatingApp.API.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "PublicId",
-                table: "Photos",
-                newName: "PublicId");
+            // migrationBuilder.RenameColumn(
+            //     name: "PublicId",
+            //     table: "Photos",
+            //     newName: "PublicId");
 
             migrationBuilder.CreateTable(
                 name: "Likes",
@@ -46,10 +46,10 @@ namespace DatingApp.API.Migrations
             migrationBuilder.DropTable(
                 name: "Likes");
 
-            migrationBuilder.RenameColumn(
-                name: "PublicId",
-                table: "Photos",
-                newName: "PublicId");
+            // migrationBuilder.RenameColumn(
+            //     name: "PublicId",
+            //     table: "Photos",
+            //     newName: "PublicId");
         }
     }
 }

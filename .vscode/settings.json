@@ -1,0 +1,30 @@
+{
+    "deploy.reloaded": {
+        "packages": [
+            {
+                "name": "Version 1.0.0",
+                "description": "Package version 1.0.0",
+
+                "files": [
+                    "DatingApp.API/bin/Release/netcoreapp2.2/publish/**"
+                ]
+            }
+        ],
+
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "Linux",
+                "description": "SFTP folder",
+
+                "host": "165.22.134.96", "port": 22,
+                "user": "root", "password": "yourpassword",
+
+                "dir": "/var/datingapp",
+                "mappings": {
+                    "DatingApp.API/bin/Release/netcoreapp2.2/publish/**": "/"
+                }
+            }
+        ]
+    }
+}
